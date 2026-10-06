@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal com projetos, habilidades e forma de contato.">
+    <title>Bernardo Reis | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="Config/Style/tailwind.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.18),_transparent_32%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.15),_transparent_28%)]"></div>
+
+    <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-sm">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+            <div class="text-lg font-extrabold tracking-tight sm:text-xl">
+                <span class="text-cyan-400">Bernardo</span><span class="text-white"> Reis</span>
+            </div>
+            <div class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+                <a href="#sobre" class="transition hover:text-white">Sobre</a>
+                <a href="#habilidades" class="transition hover:text-white">Habilidades</a>
+                <a href="#projetos" class="transition hover:text-white">Projetos</a>
+                <a href="#contato" class="transition hover:text-white">Contato</a>
+            </div>
+
+            <a href="#contato" class="hidden rounded-full border border-cyan-400/60 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-500 hover:text-slate-950 md:inline-flex">
+                Fale comigo
+            </a>
+
+            <button id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900 text-slate-100 transition hover:border-cyan-500 hover:text-cyan-300 md:hidden">
+                <span class="sr-only">Abrir menu</span>
+                <span class="flex flex-col gap-1.5">
+                    <span class="block h-0.5 w-5 rounded-full bg-current"></span>
+                    <span class="block h-0.5 w-5 rounded-full bg-current"></span>
+                    <span class="block h-0.5 w-5 rounded-full bg-current"></span>
+                </span>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden border-t border-slate-800 bg-slate-950 md:hidden">
+            <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 text-sm text-slate-200">
+                <a href="#sobre" class="rounded-lg px-3 py-2 transition hover:bg-slate-800 hover:text-white">Sobre</a>
+                <a href="#habilidades" class="rounded-lg px-3 py-2 transition hover:bg-slate-800 hover:text-white">Habilidades</a>
+                <a href="#projetos" class="rounded-lg px-3 py-2 transition hover:bg-slate-800 hover:text-white">Projetos</a>
+                <a href="#contato" class="rounded-lg px-3 py-2 transition hover:bg-slate-800 hover:text-white">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 sm:py-20 md:grid-cols-2 md:items-center">
+            <div>
+                <div class="mb-6 inline-flex items-center rounded-full border border-cyan-500/40 bg-cyan-500/10 px-3 py-1 text-xs text-cyan-300 sm:text-sm">
+                    <span class="mr-2 h-2 w-2 rounded-full bg-cyan-400"></span>
+                    Disponível para projetos
+                </div>
+
+                <h1 class="text-3xl font-black leading-tight text-white sm:text-9xl md:text-5xl lg:text-6xl">
+                    Estudante
+                    <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">em tecnologia</span>
+                    construindo conhecimento e projetos digitais.
+                </h1>
+
+                <p class="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
+                    Estou em constante aprendizado em desenvolvimento web, design e tecnologia.
+                    Busco criar projetos com boa experiência de uso, organização e criatividade.
+                </p>
+
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#projetos" class="rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 sm:px-6 sm:text-base">
+                        Ver projetos
+                    </a>
+                    <a href="#sobre" class="rounded-full border border-slate-700 px-5 py-3 text-sm font-semibold text-white transition hover:border-slate-500 hover:bg-slate-800 sm:px-6 sm:text-base">
+                        Sobre mim
+                    </a>
+                </div>
+
+                <div class="mt-10 grid grid-cols-3 gap-4 text-center text-sm text-slate-300 sm:gap-8 sm:text-left">
+                    <div>
+                        <div class="text-xl font-bold text-white sm:text-2xl">3+</div>
+                        <div class="mt-1">Anos</div>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold text-white sm:text-2xl">12</div>
+                        <div class="mt-1">Projetos</div>
+                    </div>
+                    <div>
+                        <div class="text-xl font-bold text-white sm:text-2xl">100%</div>
+                        <div class="mt-1">Qualidade</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="rounded-3xl border border-slate-800 bg-slate-900/80 p-4 shadow-2xl shadow-cyan-500/10">
+                    <div class="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6">
+                        <div class="mb-6 flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                                <span class="h-3 w-3 rounded-full bg-green-400"></span>
+                            </div>
+                            <span class="rounded-full border border-slate-700 px-2 py-1 text-xs text-slate-300">Portfolio</span>
+                        </div>
+
+                        <div class="space-y-5">
+                            <div class="rounded-2xl border border-slate-700 bg-slate-950/70 p-4">
+                                <div class="mb-2 flex items-center justify-between text-sm text-slate-400">
+                                    <span>Performance</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="h-2.5 rounded-full bg-slate-800">
+                                    <div class="h-2.5 w-[92%] rounded-full bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+                                </div>
+                            </div>
+
+                            <div class="grid gap-4 sm:grid-cols-2">
+                                <div class="rounded-2xl border border-cyan-500/30 bg-cyan-500/10 p-4">
+                                    <div class="text-sm text-cyan-300">UX/UI</div>
+                                    <div class="mt-2 text-2xl font-bold text-white">Design</div>
+                                </div>
+                                <div class="rounded-2xl border border-violet-500/30 bg-violet-500/10 p-4">
+                                    <div class="text-sm text-violet-300">Frontend</div>
+                                    <div class="mt-2 text-2xl font-bold text-white">React</div>
+                                </div>
+                            </div>
+
+                            <div class="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+                                <div class="mb-3 flex items-center gap-3">
+                                    <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-lg font-bold text-white">BR</div>
+                                    <div>
+                                        <div class="font-semibold text-white">Bernardo Reis</div>
+                                        <div class="text-sm text-slate-400">Estudante</div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2 text-xs text-slate-300">
+                                    <span class="rounded-full bg-slate-800 px-2 py-1">HTML</span>
+                                    <span class="rounded-full bg-slate-800 px-2 py-1">CSS</span>
+                                    <span class="rounded-full bg-slate-800 px-2 py-1">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+            <div class="mb-12 text-center">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Sobre</p>
+                <h2 class="mt-3 text-2xl font-bold text-white sm:text-3xl md:text-4xl">Construindo soluções digitais com propósito</h2>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2">
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-8">
+                    <p class="text-lg leading-8 text-slate-300">
+                        Sou estudante de tecnologia com interesse em desenvolvimento web e criação de experiências digitais.
+                        Estou buscando evoluir constantemente, aprender novas ferramentas e transformar ideias em projetos reais.
+                    </p>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                        <i class="fa-solid fa-briefcase text-2xl text-cyan-400"></i>
+                        <h3 class="mt-4 text-xl font-semibold text-white">Objetivo</h3>
+                        <p class="mt-2 text-slate-300">Aprender, praticar e desenvolver projetos com foco em qualidade e criatividade.</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+                        <i class="fa-solid fa-code text-2xl text-cyan-400"></i>
+                        <h3 class="mt-4 text-xl font-semibold text-white">Tecnologia</h3>
+                        <p class="mt-2 text-slate-300">HTML, CSS, JavaScript, Tailwind e ferramentas modernas de front-end.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+            <div class="mb-12 text-center">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Habilidades</p>
+                <h2 class="mt-3 text-2xl font-bold text-white sm:text-3xl md:text-4xl">Ferramentas e tecnologias que utilizo</h2>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5 text-center transition hover:-translate-y-1 hover:border-cyan-500/50">
+                    <i class="fa-brands fa-html5 text-3xl text-orange-400"></i>
+                    <h3 class="mt-4 font-semibold text-white">HTML5</h3>
+                </div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5 text-center transition hover:-translate-y-1 hover:border-cyan-500/50">
+                    <i class="fa-brands fa-css3-alt text-3xl text-blue-400"></i>
+                    <h3 class="mt-4 font-semibold text-white">CSS3</h3>
+                </div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5 text-center transition hover:-translate-y-1 hover:border-cyan-500/50">
+                    <i class="fa-brands fa-js text-3xl text-yellow-400"></i>
+                    <h3 class="mt-4 font-semibold text-white">JavaScript</h3>
+                </div>
+                <div class="rounded-2xl border border-slate-800 bg-slate-900 p-5 text-center transition hover:-translate-y-1 hover:border-cyan-500/50">
+                    <i class="fa-brands fa-react text-3xl text-cyan-400"></i>
+                    <h3 class="mt-4 font-semibold text-white">React</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+            <div class="mb-12 text-center">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Projetos</p>
+                <h2 class="mt-3 text-2xl font-bold text-white sm:text-3xl md:text-4xl">Trabalhos recentes</h2>
+            </div>
+
+            <div class="grid gap-6 lg:grid-cols-3">
+                <article class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900">
+                    <div class="h-48 bg-gradient-to-br from-cyan-500/30 via-slate-800 to-slate-900"></div>
+                    <div class="p-6">
+                        <div class="mb-3 flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">E-commerce</h3>
+                            <span class="rounded-full bg-cyan-500/10 px-2 py-1 text-xs text-cyan-300">Web</span>
+                        </div>
+                        <p class="text-slate-300">Loja digital com layout moderno, catálogo, carrinho e fluxo de compra otimizado.</p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900">
+                    <div class="h-48 bg-gradient-to-br from-violet-500/30 via-slate-800 to-slate-900"></div>
+                    <div class="p-6">
+                        <div class="mb-3 flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">Dashboard</h3>
+                            <span class="rounded-full bg-violet-500/10 px-2 py-1 text-xs text-violet-300">App</span>
+                        </div>
+                        <p class="text-slate-300">Painel administrativo para monitoramento de métricas e gestão de dados em tempo real.</p>
+                    </div>
+                </article>
+
+                <article class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900">
+                    <div class="h-48 bg-gradient-to-br from-emerald-500/30 via-slate-800 to-slate-900"></div>
+                    <div class="p-6">
+                        <div class="mb-3 flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">Landing Page</h3>
+                            <span class="rounded-full bg-emerald-500/10 px-2 py-1 text-xs text-emerald-300">Marketing</span>
+                        </div>
+                        <p class="text-slate-300">Página de conversão com foco em performance, storytelling visual e CTA estratégico.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="border-t border-slate-800 bg-slate-950">
+        <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 md:flex-row md:items-center md:justify-between">
+            <div>
+                <p class="text-sm uppercase tracking-[0.2em] text-cyan-400">Contato</p>
+                <h2 class="mt-2 text-2xl font-bold text-white sm:text-3xl">Vamos trabalhar juntos</h2>
+            </div>
+
+            <div class="flex flex-col gap-4 text-sm text-slate-300 sm:flex-row sm:flex-wrap">
+                <a href="mailto:bernardogroup615@gmail.com" class="rounded-full border border-slate-700 px-4 py-2 text-center transition hover:border-cyan-500 hover:text-cyan-300">
+                    <i class="fa-solid fa-envelope mr-2"></i> bernardogroup615@gmail.com
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer" class="rounded-full border border-slate-700 px-4 py-2 text-center transition hover:border-cyan-500 hover:text-cyan-300">
+                    <i class="fa-brands fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Config/App/script.js"></script>
+</body>
+</html>
